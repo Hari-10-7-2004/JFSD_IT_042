@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Newspaper Article</title>
+<style>
+    body {
+        font-family: Georgia, serif;
+        line-height: 1.8;
+        margin: 0;
+        padding: 20px;
+        background-color: #f8f8f8;
+    }
+    .container {
+        max-width: 900px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .article {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .header {
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 2px solid black;
+        padding-bottom: 10px;
+    }
+    .meta {
+        color: #666;
+        text-align: center;
+        font-size: 14px;
+    }
+    .content {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .content img {
+        max-width: 200px;
+        border-radius: 5px;
+    }
+    .text {
+        flex: 1;
+    }
+    .columns {
+        display: flex;
+        gap: 20px;
+    }
+    .column {
+        flex: 1;
+        text-align: justify;
+    }
+    .footer {
+        font-style: italic;
+        color: #888;
+        text-align: right;
+        margin-top: 20px;
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="article">
+        <div class="header">Breaking News: Technology Advances in 2025</div>
+        <div class="meta">Published on February 2, 2025 | By Harini </div>
+
+        <div class="content">
+          
+            <div class="text">
+                <p>Technology is evolving at a rapid pace, with advancements in artificial intelligence, quantum computing, and space exploration making headlines.</p>
+                <p>Experts suggest that the next five years will see a dramatic shift in how humans interact with machines.</p>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <p>The impact of AI in industries such as healthcare, finance, and transportation is undeniable. Companies are investing billions into AI research, aiming to improve efficiency and decision-making processes.</p>
+            </div>
+            <div class="column">
+                <p>Meanwhile, quantum computing is making strides, with researchers achieving breakthroughs that could revolutionize encryption, drug discovery, and data processing.</p>
+            </div>
+        </div>
+
+        <div class="footer">For more updates, visit our website.</div>
+    </div>
+</div>
+
+</body>
+</html>
