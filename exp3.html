@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="todo-container">
+        <h2>To-Do List</h2>
+        <form onsubmit="event.preventDefault(); addTask();">
+            <input type="text" id="task" placeholder="Add a task">
+            <button type="submit">Add</button>
+            <button type="button" onclick="clearTasks()">Clear</button>
+        </form>
+        <ul id="task-list"></ul>
+    </div>
+ 
+    <script>
+        let taskCount = 0;
+ 
+        function addTask() {
+            let taskInput = document.getElementById("task");
+            let taskValue = taskInput.value.trim();
+            if (taskValue === "") return;
+           
+            taskCount++;
+            let li = document.createElement("li");
+            li.textContent = `${taskCount}. ${taskValue}`;
+            document.getElementById("task-list").appendChild(li);
+            taskInput.value = "";
+        }
+       
+        function clearTasks() {
+            document.getElementById("task-list").innerHTML = "";
+            taskCount = 0;
+        }
+    </script>
+</body>
+</html>
+ 
+ 
